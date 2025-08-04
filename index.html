@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday!</title>
+</head>
+<body style="text-align:center; font-family:sans-serif; background:#ffe4ec;">
+  <h1>🎉 Happy Birthday! 🎂</h1>
+  <p>Enter your name:</p>
+  <input type="text" id="nameInput" placeholder="Your Name" />
+  <button onclick="showWish()">Show Wish</button>
+  <p id="wish" style="font-size:1.5em; color:#d63384;"></p>
+
+  <script>
+    function showWish() {
+      const name = document.getElementById("nameInput").value;
+      document.getElementById("wish").textContent =
+        "Dear " + name + ", wishing you a day full of joy and love! 💖";
+    }
+  </script>
+</body>
+</html>
